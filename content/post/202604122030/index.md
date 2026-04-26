@@ -30,13 +30,13 @@ flowchart TD
 
 先到 Google Cloud Console 的 `API 和服務 > 憑證`，建立 `OAuth 用戶端 ID`。
 
-![建立 OAuth 用戶端 ID](/images/202604122030/2026-04-06%2023%2013%2029.png)
+![建立 OAuth 用戶端 ID](./2026-04-06 23 13 29.png)
 
 建立完成後，可以在用戶端設定頁面填入重新導向 URI。這裡最重要的是後端 Google middleware 使用的 callback URI。
 
-![Google OAuth 用戶端設定 - localhost 前端網址](/images/202604122030/2026-04-06%2023%2019%2001.png)
+![Google OAuth 用戶端設定 - localhost 前端網址](./2026-04-06 23 19 01.png)
 
-![Google OAuth 用戶端設定 - signin-google](/images/202604122030/2026-04-08%2001%2008%2004.png)
+![Google OAuth 用戶端設定 - signin-google](./2026-04-08 01 08 04.png)
 
 ### URI 設定重點
 
@@ -233,4 +233,5 @@ onMounted(() => {
 ## 參考程式位置
 
 - [LibraryDevelop - GitHub](https://github.com/hezhengmin/LibraryDevelop)
+
 

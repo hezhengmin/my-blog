@@ -47,7 +47,7 @@ draft: true
 VMware-workstation-full-17.6.4-24832109.exe
 ```
 
-![VMware Workstation Pro 下載頁面](/images/vmware-fhir/vmware-download-page.png)
+![VMware Workstation Pro 下載頁面](./vmware-download-page.png)
 
 ## Step 2 建立 Ubuntu 64-bit 虛擬機
 
@@ -67,7 +67,7 @@ Network Adapter: NAT
 5. 完成精靈後建立虛擬機。
 6. 若有看到 `Power on this virtual machine after creation`，可勾選直接開機。
 
-![Ubuntu 虛擬機建立完成摘要](/images/vmware-fhir/vm-create-summary.png)
+![Ubuntu 虛擬機建立完成摘要](./vm-create-summary.png)
 
 ## Step 3 啟動 Ubuntu 並確認基本環境
 
@@ -88,7 +88,7 @@ ip a
 
 如果有看到虛擬機取得 IP，例如 `192.168.x.x`，通常表示網路正常。
 
-![Ubuntu 虛擬機桌面](/images/vmware-fhir/ubuntu-desktop.png)
+![Ubuntu 虛擬機桌面](./ubuntu-desktop.png)
 
 ## Step 4 安裝 Docker
 
@@ -216,7 +216,7 @@ hapi:
 
 下圖是成功啟動後使用的 `hapi.application.yaml` 設定畫面：
 
-![hapi.application.yaml 設定內容](/images/vmware-fhir/hapi-application-yaml.png)
+![hapi.application.yaml 設定內容](./hapi-application-yaml.png)
 
 ## Step 7 啟動容器
 
@@ -246,7 +246,7 @@ docker ps
 - `fhir` 容器狀態為 `Up`
 - `fhir` 對外開放 `8080`
 
-![Docker 容器狀態與 Swagger UI 成功畫面](/images/vmware-fhir/docker-ps-and-swagger-ui.png)
+![Docker 容器狀態與 Swagger UI 成功畫面](./docker-ps-and-swagger-ui.png)
 
 ## Step 8 驗證 HAPI FHIR 是否成功
 
@@ -373,3 +373,4 @@ the attribute `version` is obsolete
 - 串接自己的 TW Core Profile
 - 在前面加 Nginx 或反向代理
 - 改成正式環境資料庫與持久化配置
+

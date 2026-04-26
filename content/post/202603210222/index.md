@@ -128,3 +128,4 @@ public class Person
 ## 參考
 
 - 實作專案：https://github.com/hezhengmin/Project/tree/master/StaticThisDemo
+

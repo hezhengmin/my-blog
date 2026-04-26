@@ -670,7 +670,7 @@ dotnet ef migrations add Init --project Zheng.Infra.Data --startup-project Libra
 dotnet ef database update --project Zheng.Infra.Data --startup-project Library.Server
 ```
 
-![首次建立資料庫](/images/202604121835/2026-04-12%2018%2034%2050.png)
+![首次建立資料庫](./2026-04-12 18 34 50.png)
 
 執行後，EF Core 會：
 1. 讀取 `LibraryContext` 的所有 `DbSet<T>` 和 `OnModelCreating` 設定
@@ -1013,3 +1013,4 @@ Step 8: 持續迭代
 ## 參考
 
 - [LibraryDevelop - GitHub](https://github.com/hezhengmin/LibraryDevelop)
+

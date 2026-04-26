@@ -173,7 +173,7 @@ export default {
 ```
 
 ## 結果 
-![圖片](/images/202303162331/20230316233213.jpg "圖片")
+![圖片](./20230316233213.jpg "圖片")
 
 ## 參考
 1. https://github.com/hezhengmin/JavaScript-Syntax/tree/main/Vue/%E7%AF%84%E4%BE%8B/VueCli/vue_provide 

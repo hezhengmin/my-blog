@@ -668,3 +668,4 @@ public class CurrentUser : ICurrentUser
 
 - [LibraryDevelop - GitHub](https://github.com/hezhengmin/LibraryDevelop)
 - [ASP.NET Core 中的動態授權 - 雨夜朦朧](https://www.cnblogs.com/RainingNight/p/dynamic-authorization-in-asp-net-core.html)
+

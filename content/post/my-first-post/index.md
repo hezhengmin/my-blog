@@ -8,10 +8,10 @@ draft: true
 
 ## 安裝 Hugo
 官方提供 [Hugo安裝路徑](https://github.com/gohugoio/hugo/releases)
-![檔案](/images/1/03.jpg)
-![安裝位置](/images/1/02.jpg "安裝位置")
+![檔案](./03.jpg)
+![安裝位置](./02.jpg "安裝位置")
 ## 設定環境變數
-![環境變數設定](/images/1/01.jpg "環境變數設定")
+![環境變數設定](./01.jpg "環境變數設定")
 
 ## 創建新站點
 ```
@@ -64,4 +64,5 @@ PS D:\Github\Hugo\quickstart> hugo server -D
 ## 參考
 1. https://gohugo.io/getting-started/quick-start/
 2. https://www.youtube.com/watch?v=BRQcD6po5MA
+
 
