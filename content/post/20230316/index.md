@@ -3,7 +3,7 @@ title: "Vue Provide 和 Inject"
 date: 2023-03-16
 categories: ["前端技術", "Vue"]
 tags: ["Vue", "Provide", "Inject", "組件"]
-draft: true
+draft: false
 ---
 
 原本要傳遞三層  

@@ -3,7 +3,7 @@ title: "建立 Vue.js 前端專案"
 date: 2023-03-19T22:40:42+08:00
 categories: ["前端技術", "Vue"]
 tags: ["Vue", "Node.js", "CLI", "教學"]
-draft: true
+draft: false
 ---
 
 1. 安裝 Node.js

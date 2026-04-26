@@ -3,7 +3,7 @@ title: "vue init webpack [專案名稱]"
 date: 2025-03-03T23:57:55+08:00
 categories: ["前端技術", "Vue"]
 tags: ["Vue", "webpack", "CLI", "教學"]
-draft: true
+draft: false
 ---
 1. 安裝 Vue CLI
     * 安裝 npm install -g vue-cli
@@ -19,3 +19,4 @@ draft: true
 
 ## 參考
 * https://cli.vuejs.org/zh/guide/creating-a-project.html#%E6%8B%89%E5%8F%96-2-x-%E6%A8%A1%E6%9D%BF-%E6%97%A7%E7%89%88%E6%9C%AC
+

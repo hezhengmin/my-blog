@@ -3,7 +3,7 @@ title: "第三方 Google 登入設定"
 date: 2026-04-12T20:30:00+08:00
 categories: ["後端技術", "認證"]
 tags: ["Google", "OAuth", "ASP.NET Core", "登入"]
-draft: true
+draft: false
 ---
 
 這篇記錄 `Library` 專案的第三方 Google 登入設定流程，包含 Google Cloud Console 建立 OAuth 用戶端、ASP.NET Core 後端設定，以及前端登入頁如何串接 Google 登入。
@@ -233,5 +233,6 @@ onMounted(() => {
 ## 參考程式位置
 
 - [LibraryDevelop - GitHub](https://github.com/hezhengmin/LibraryDevelop)
+
 
 

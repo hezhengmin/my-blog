@@ -3,7 +3,7 @@ title: "EF Core Code First 實戰：從零建立資料庫到 Migration 管理"
 date: 2026-04-12T15:52:03+08:00
 categories: ["後端技術", "資料庫"]
 tags: ["EF Core", "Code First", "Migration", "教學"]
-draft: true
+draft: false
 ---
 
 ## 前言
@@ -1013,4 +1013,5 @@ Step 8: 持續迭代
 ## 參考
 
 - [LibraryDevelop - GitHub](https://github.com/hezhengmin/LibraryDevelop)
+
 

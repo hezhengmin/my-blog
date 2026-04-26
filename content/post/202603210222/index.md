@@ -3,7 +3,7 @@ title: "C# Static Field 陷阱：在建構子中指派 this"
 date: 2026-03-21T02:22:00+08:00
 categories: ["C#", "程式設計"]
 tags: ["C#", "static", "建構子", "陷阱"]
-draft: true
+draft: false
 ---
 
 這個專案示範了一個常見但危險的模式：在實例建構子（Instance Constructor）中將 `this` 指派給靜態欄位（Static Field）。這通常是為了方便全域存取「當前」物件，但往往會導致意想不到的錯誤。
@@ -128,4 +128,5 @@ public class Person
 ## 參考
 
 - 實作專案：https://github.com/hezhengmin/Project/tree/master/StaticThisDemo
+
 

@@ -3,7 +3,7 @@ title: "C# volatile 詳解：理解多執行緒可見性 (Memory Visibility)"
 date: 2026-03-21T01:53:00+08:00
 categories: ["C#", "多執行緒"]
 tags: ["C#", "volatile", "多執行緒", "記憶體"]
-draft: true
+draft: false
 ---
 
 當我們編寫多執行緒程式時，最容易被忽視的概念之一就是**記憶體可見性 (Memory Visibility)**。這個範例專案演示了在沒有適當同步機制的情況下，一個執行緒對變數的修改如何可能被另一個執行緒「視而不見」，以及 `volatile` 關鍵字如何解決這個問題。
@@ -102,3 +102,4 @@ class WithVolatileDemo
 ## 參考
 
 - 實作專案：https://github.com/hezhengmin/Project/tree/master/VolatileExample
+

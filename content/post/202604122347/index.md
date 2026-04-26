@@ -3,7 +3,7 @@ title: "Windows 安裝 VMware Ubuntu 虛擬機，並用 Docker 架設 HAPI FHIR 
 date: 2026-04-12T23:47:53+08:00
 categories: ["虛擬化", "後端技術"]
 tags: ["VMware", "Ubuntu", "Docker", "FHIR"]
-draft: true
+draft: false
 ---
 
 # Windows 安裝 VMware Ubuntu 虛擬機，並用 Docker 架設 HAPI FHIR Server
@@ -373,4 +373,5 @@ the attribute `version` is obsolete
 - 串接自己的 TW Core Profile
 - 在前面加 Nginx 或反向代理
 - 改成正式環境資料庫與持久化配置
+
 

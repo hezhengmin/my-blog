@@ -3,7 +3,7 @@ title: "Speck-Kit：用 AI 驅動的規格化開發工作流"
 date: 2026-03-20T22:07:07+08:00
 categories: ["軟體開發", "AI"]
 tags: ["Speck-Kit", "AI", "規格化", "工作流"]
-draft: true
+draft: false
 ---
 
 Speck-Kit 是一套規格化的專案管理框架，專為 AI 輔助軟體開發設計。它透過結構化的規格模板、分階段的開發流程，以及與 GitHub Copilot 深度整合的自訂 Agent，讓團隊在動手寫程式之前就能完成完整的需求釐清與技術規劃。本文以我的圖書管理系統（Library）專案為例，介紹 Speck-Kit 的核心概念與實際應用。
@@ -275,5 +275,6 @@ Speck-Kit 提供 PowerShell 腳本來自動化常見流程：
 - Spec-Kit 官方 GitHub：https://github.com/github/spec-kit
 - Spec-Kit 版本：v0.3.2
 - 實作專案：https://github.com/hezhengmin/Library/tree/feats/001-user-registration
+
 
 

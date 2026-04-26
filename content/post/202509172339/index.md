@@ -3,7 +3,7 @@ title: "Oracle Database 23ai 入門指南"
 date: 2025-09-17T23:39:57+08:00
 categories: ["資料庫"]
 tags: ["Oracle", "Database", "AI", "教學"]
-draft: true
+draft: false
 ---
 
 這是一份針對開發者的 Oracle Database 23ai 快速入門指南，內容涵蓋其核心新功能、安裝步驟，以及如何開始您的第一個查詢。本文結合了官方建議與實用的操作範例。
@@ -161,3 +161,4 @@ exit;
 ## 5.參考專案
 
 * https://github.com/hezhengmin/HumanResources
+

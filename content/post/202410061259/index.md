@@ -3,7 +3,7 @@ title: "使用 Vue CLI 建立專案"
 date: 2024-10-06T00:59:10+08:00
 categories: ["前端技術", "Vue"]
 tags: ["Vue", "CLI", "Babel", "SCSS"]
-draft: true
+draft: false
 ---
 1. 安裝 Vue CLI
     * 安裝 Vue CLI npm install -g @vue/cli

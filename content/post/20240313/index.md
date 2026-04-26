@@ -3,7 +3,7 @@ title: "父組件傳遞資料在子組件偵測應用"
 date: 2024-03-13T22:33:07+08:00
 categories: ["前端技術", "Vue"]
 tags: ["Vue", "組件", "props", "watch"]
-draft: true
+draft: false
 ---
 
 (CustomSelect.vue)子組件要偵聽父組件(App.vue)來的props，使用watch監聽，來變更子組件的數據。(備註:computed也可以)
@@ -199,4 +199,5 @@ export default {
 
 ## 參考
 1. https://github.com/hezhengmin/JavaScript-Syntax/tree/main/Vue/%E7%AF%84%E4%BE%8B/VueCli/vue_props
+
 

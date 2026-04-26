@@ -3,7 +3,7 @@ title: "建立網站"
 date: 2022-05-29T23:30:30+08:00
 categories: ["網站建置"]
 tags: ["Hugo", "靜態網站", "架站", "教學"]
-draft: true
+draft: false
 ---
 
 ## 安裝 Hugo
@@ -64,5 +64,6 @@ PS D:\Github\Hugo\quickstart> hugo server -D
 ## 參考
 1. https://gohugo.io/getting-started/quick-start/
 2. https://www.youtube.com/watch?v=BRQcD6po5MA
+
 
 

@@ -3,7 +3,7 @@ title: "VSCode 擴充套件設定"
 date: 2024-10-05T17:35:13+08:00
 categories: ["開發工具"]
 tags: ["VSCode", "擴充套件", "Prettier", "設定"]
-draft: true
+draft: false
 ---
 1. Prettier - Code formatter
 2. Vue - Official 
@@ -48,5 +48,6 @@ draft: true
 1. https://github.com/OBKoro1/koro1FileHeader
 2. https://blog.csdn.net/qq_44170108/article/details/130366752 
 3. https://github.com/sdras/vue-vscode-snippets
+
 
 

@@ -3,7 +3,7 @@ title: "Git Tutorial"
 date: 2022-08-06T16:20:33+08:00
 categories: ["版本控制"]
 tags: ["Git", "指令", "教學", "設定"]
-draft: true
+draft: false
 ---
 ### Git設定
 * 查看設定
@@ -75,3 +75,4 @@ draft: true
 
 * 儲存並離開
 > :wq
+
