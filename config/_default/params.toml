@@ -18,9 +18,9 @@ SortBy              = "default"
     lastUpdated = ":date_full"
 
 [sidebar]
-    emoji    = "🍥"
+    emoji    = "🤣"
     subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    avatar   = "img/avatar.png"
+    avatar   = "img/anime_character.png"
 
 [article]
     headingAnchor = false
@@ -52,6 +52,106 @@ SortBy              = "default"
 [comments]
     enabled  = true
     provider = "disqus"
+
+    [comments.artalk]
+        serverUrl = ""
+        site      = ""
+
+    [comments.disqusjs]
+        shortname  = "ming-blog"
+        apiUrl     = ""
+        apiKey     = ""
+        admin      = ""
+        adminLabel = ""
+
+    [comments.utterances]
+        repo      = ""
+        issueTerm = "pathname"
+        label     = ""
+
+    [comments.beaudar]
+        repo      = ""
+        issueTerm = "pathname"
+        label     = ""
+        theme     = ""
+
+    [comments.remark42]
+        host                    = ""
+        site                    = ""
+        locale                  = "en"
+        max_shown_comments      = 15
+        show_email_subscription = true
+
+    [comments.vssue]
+        platform        = ""
+        owner           = ""
+        repo            = ""
+        clientId        = ""
+        clientSecret    = ""
+        autoCreateIssue = false
+
+    # Waline client configuration see: https://waline.js.org/en/reference/component.html
+    [comments.waline]
+        serverURL    = ""
+        lang         = ""
+        pageview     = ""
+        emoji        = ["https://unpkg.com/@waline/emojis@1.0.1/weibo"]
+        requiredMeta = ["name", "email", "url"]
+
+        [comments.waline.locale]
+            admin       = "Admin"
+            placeholder = ""
+
+    [comments.twikoo]
+        envId  = ""
+        region = ""
+        path   = ""
+        lang   = ""
+
+    # See https://cactus.chat/docs/reference/web-client/#configuration for description of the various options
+    [comments.cactus]
+        defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
+        serverName           = "cactus.chat"
+        siteName             = ""  # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+
+    [comments.giscus]
+        repo             = ""
+        repoID           = ""
+        category         = ""
+        categoryID       = ""
+        mapping          = "title"
+        lightTheme       = "light"
+        darkTheme        = "dark_dimmed"
+        reactionsEnabled = 1
+        emitMetadata     = 0
+        inputPosition    = "top"
+        lang             = "en"
+        strict           = 0
+        loading          = "lazy"
+
+    [comments.gitalk]
+        owner        = ""
+        admin        = ""
+        repo         = ""
+        clientID     = ""
+        clientSecret = ""
+        proxy        = ""
+
+    [comments.cusdis]
+        host = "https://cusdis.com"
+        id   = ""
+
+    # Comentario client configuration
+    [comments.comentario]
+        url                   = ""
+        autoInit              = false
+        autoNonInteractiveSso = false
+        cssOverride           = ""
+        lang                  = ""
+        liveUpdate            = false
+        maxLevel              = 0
+        noFonts               = false
+        theme                 = ""
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
     # Copy the configurations you need from there and paste it here.
