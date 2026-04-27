@@ -19,7 +19,7 @@ SortBy              = "default"
 
 [sidebar]
     emoji    = "🤣"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle = "Copy & Paste 碼農工程師"
     avatar   = "img/anime_character.png"
 
 [article]
