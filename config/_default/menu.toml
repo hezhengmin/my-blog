@@ -14,11 +14,11 @@
 
     [social.params]
         icon = "brand-github"
-
+        
 [[social]]
-    identifier = "twitter"
-    name       = "Twitter"
-    url        = "https://twitter.com"
+    identifier = "linkedin"
+    name       = "LinkedIn"
+    url        = "https://www.linkedin.com/in/zhengmin-he-985a18180"
 
     [social.params]
-        icon = "brand-twitter"
+    icon = "brand-linkedin"
