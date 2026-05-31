@@ -43,47 +43,22 @@ draft: false
 
 ```mermaid
 flowchart TD
-    subgraph UI["Windows Forms UI"]
-        MF["MainForm"]
-        CCF["ConnectionConfigForm"]
-    end
+    MF[MainForm] -->|CRUD| ICCS[IConnectionConfigService]
+    CCF[ConnectionConfigForm] --> ICCS
+    ICCS --> CCS[ConnectionConfigService]
+    CCS --> CTX[AppDbContext]
+    CTX --> DB[(SQLite app.db)]
 
-    subgraph ServiceLayer["Service Layer"]
-        ICCS["IConnectionConfigService"]
-        CCS["ConnectionConfigService"]
-    end
+    MF --> TCM1[TcpClientManager 1]
+    MF --> TCM2[TcpClientManager 2]
+    MF --> TCMN[TcpClientManager N]
 
-    subgraph DataLayer["Data Layer"]
-        CTX["AppDbContext"]
-        DB[("SQLite app.db")]
-    end
-
-    subgraph Network["Network Layer"]
-        TCM1["TcpClientManager #1"]
-        TCM2["TcpClientManager #2"]
-        TCMN["TcpClientManager #N"]
-    end
-
-    subgraph Remote["Remote TCP Servers"]
-        S1["Server A"]
-        S2["Server B"]
-        SN["Server N"]
-    end
-
-    MF -->|CRUD| ICCS
-    ICCS --> CCS
-    CCS --> CTX
-    CTX --> DB
-
-    CCF -->|新增/編輯| ICCS
-
-    MF -->|Connect/Send| TCM1
-    MF -->|Connect/Send| TCM2
-    MF -->|Connect/Send| TCMN
-
-    TCM1 <-->|TCP| S1
-    TCM2 <-->|TCP| S2
-    TCMN <-->|TCP| SN
+    TCM1 --> S1[Server A]
+    S1 --> TCM1
+    TCM2 --> S2[Server B]
+    S2 --> TCM2
+    TCMN --> SN[Server N]
+    SN --> TCMN
 
     TCM1 -->|Events| MF
     TCM2 -->|Events| MF
