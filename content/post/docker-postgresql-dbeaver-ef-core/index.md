@@ -4,6 +4,7 @@ slug: "docker-postgresql-dbeaver-ef-core"
 date: 2026-10-18T16:00:00+08:00
 draft: false
 description: "從 Docker 啟動 PostgreSQL、DBeaver 連線，到 .NET 專案切換 provider、PowerShell 環境變數與 EF Core migration 排錯。"
+categories: ["後端技術", "資料庫"]
 tags: ["Docker", "PostgreSQL", "DBeaver", "EF Core", ".NET", "PowerShell"]
 ---
 

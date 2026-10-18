@@ -4,6 +4,7 @@ date: 2026-10-17T00:00:00+08:00
 draft: false
 slug: "facebook-login-aspnet-core-vue"
 description: "從 Meta Facebook Login 後台設定、OAuth 回呼與 User Secrets，到 localhost 網域驗證、開發模式及登入權限的圖文教學。"
+categories: ["後端技術", "權限管理"]
 tags: ["Facebook", "OAuth", "ASP.NET Core", "Vue", ".NET"]
 ---
 

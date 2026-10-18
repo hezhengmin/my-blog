@@ -3,6 +3,7 @@ title: "Windows 用 Docker 建立 SQL Server：SSMS 連線與 EF Core Code First
 date: 2026-10-10T00:00:00+08:00
 draft: false
 description: "從 Windows 安裝 Docker Desktop 與 WSL 2、建立 SQL Server 容器、SSMS 連線，到 EF Core 遷移與常見錯誤排查。"
+categories: ["後端技術", "資料庫"]
 tags: ["Docker", "SQL Server", "SSMS", "EF Core", ".NET"]
 ---
 

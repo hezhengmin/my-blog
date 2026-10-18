@@ -3,6 +3,7 @@ title: "Windows 使用 SSH 連接 GitHub：從金鑰設定到 Clone 專案"
 date: 2026-10-10T00:00:00+08:00
 draft: false
 description: "使用 Windows PowerShell 建立 SSH 金鑰、加入 GitHub、確認主機指紋並下載專案。"
+categories: ["版本控制"]
 tags: ["Git", "GitHub", "SSH", "Windows"]
 ---
 
