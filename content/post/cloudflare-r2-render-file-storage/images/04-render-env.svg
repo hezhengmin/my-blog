@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="745" viewBox="0 0 1200 745">
+<rect width="1200" height="100%" fill="#f1f5f9"/>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#172554}.title{font-size:32px;font-weight:700}.sub{font-size:20px;fill:#475569}.label{font-size:23px;font-weight:700}.value{font-size:19px}.note{font-size:19px;fill:#475569}</style>
+<rect x="30" y="24" width="1140" height="112" rx="16" fill="#fff"/>
+<text x="58" y="72" class="title">Render 線上版：Environment 設定</text>
+<text x="58" y="111" class="sub">選擇網站服務 → Environment → Add Environment Variable</text>
+<rect x="42" y="160" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="193" r="17" fill="#2563eb"/>
+<text x="78" y="200" text-anchor="middle" style="fill:white;font-size:20px">1</text>
+<text x="110" y="194" class="label">儲存模式</text>
+<text x="490" y="194" class="value">Storage__Provider = R2</text>
+<text x="110" y="225" class="note">請用雙底線名稱；Render 不會套用 Compose 的映射。</text>
+<rect x="42" y="256" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="289" r="17" fill="#2563eb"/>
+<text x="78" y="296" text-anchor="middle" style="fill:white;font-size:20px">2</text>
+<text x="110" y="290" class="label">S3 端點</text>
+<text x="490" y="290" class="value">Storage__R2__Endpoint</text>
+<text x="110" y="321" class="note">值填控制台提供的完整 Endpoint。</text>
+<rect x="42" y="352" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="385" r="17" fill="#2563eb"/>
+<text x="78" y="392" text-anchor="middle" style="fill:white;font-size:20px">3</text>
+<text x="110" y="386" class="label">S3 存取識別碼</text>
+<text x="490" y="386" class="value">Storage__R2__AccessKeyId</text>
+<text x="110" y="417" class="note">值填新建立的 Access Key ID。</text>
+<rect x="42" y="448" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="481" r="17" fill="#2563eb"/>
+<text x="78" y="488" text-anchor="middle" style="fill:white;font-size:20px">4</text>
+<text x="110" y="482" class="label">S3 秘密金鑰</text>
+<text x="490" y="482" class="value">Storage__R2__SecretAccessKey</text>
+<text x="110" y="513" class="note">值填新 Secret；本文不展示任何真實金鑰。</text>
+<rect x="42" y="544" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="577" r="17" fill="#2563eb"/>
+<text x="78" y="584" text-anchor="middle" style="fill:white;font-size:20px">5</text>
+<text x="110" y="578" class="label">私人貯體</text>
+<text x="490" y="578" class="value">Storage__R2__PrivateBucket = library-private</text>
+<text x="110" y="609" class="note">保留原本資料庫、JWT 等設定，再儲存並部署。</text>
+<text x="48" y="710" class="note">驗證：網站上傳 → R2 出現物件 → 網站下載 → 重新部署後再次下載。</text>
+</svg>

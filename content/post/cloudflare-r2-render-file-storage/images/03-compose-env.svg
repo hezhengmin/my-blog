@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="745" viewBox="0 0 1200 745">
+<rect width="1200" height="100%" fill="#f1f5f9"/>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#172554}.title{font-size:32px;font-weight:700}.sub{font-size:20px;fill:#475569}.label{font-size:23px;font-weight:700}.value{font-size:19px}.note{font-size:19px;fill:#475569}</style>
+<rect x="30" y="24" width="1140" height="112" rx="16" fill="#fff"/>
+<text x="58" y="72" class="title">本機 Docker Compose：.env 如何傳進程式？</text>
+<text x="58" y="111" class="sub">在專案根目錄編輯 .env；以下是 Library 已實作的映射規則</text>
+<rect x="42" y="160" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="193" r="17" fill="#2563eb"/>
+<text x="78" y="200" text-anchor="middle" style="fill:white;font-size:20px">1</text>
+<text x="110" y="194" class="label">選擇儲存模式</text>
+<text x="490" y="194" class="value">STORAGE_PROVIDER=Local 或 R2</text>
+<text x="110" y="225" class="note">Local 存 uploads 持久卷；R2 存私人貯體。</text>
+<rect x="42" y="256" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="289" r="17" fill="#2563eb"/>
+<text x="78" y="296" text-anchor="middle" style="fill:white;font-size:20px">2</text>
+<text x="110" y="290" class="label">設定端點</text>
+<text x="490" y="290" class="value">R2_ENDPOINT=https://&lt;ACCOUNT_ID&gt;…</text>
+<text x="110" y="321" class="note">複製 R2 控制台完整 S3 Endpoint。</text>
+<rect x="42" y="352" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="385" r="17" fill="#2563eb"/>
+<text x="78" y="392" text-anchor="middle" style="fill:white;font-size:20px">3</text>
+<text x="110" y="386" class="label">設定 S3 認證</text>
+<text x="490" y="386" class="value">R2_ACCESS_KEY_ID / R2_SECRET_ACCESS_KEY</text>
+<text x="110" y="417" class="note">只在本機 .env 保存新金鑰；不要提交 Git。</text>
+<rect x="42" y="448" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="481" r="17" fill="#2563eb"/>
+<text x="78" y="488" text-anchor="middle" style="fill:white;font-size:20px">4</text>
+<text x="110" y="482" class="label">Compose environment</text>
+<text x="490" y="482" class="value">Storage__R2__AccessKeyId: ${R2_ACCESS_KEY_ID:-}</text>
+<text x="110" y="513" class="note">Compose 先插值，再將變數傳入 web 容器。</text>
+<rect x="42" y="544" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="577" r="17" fill="#2563eb"/>
+<text x="78" y="584" text-anchor="middle" style="fill:white;font-size:20px">5</text>
+<text x="110" y="578" class="label">ASP.NET Core 讀取</text>
+<text x="490" y="578" class="value">Storage:R2:AccessKeyId</text>
+<text x="110" y="609" class="note">雙底線 __ 對應設定階層 :，環境變數覆寫 appsettings。</text>
+<text x="48" y="710" class="note">套用設定：docker compose up -d --build；直接 dotnet run 不會自動讀取 .env。</text>
+</svg>

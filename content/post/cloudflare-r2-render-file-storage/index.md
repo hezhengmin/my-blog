@@ -1,5 +1,5 @@
 ---
-title: "Cloudflare R2 教學：替 Render 網站保存附件，支援本地與雲端儲存切換"
+title: "Cloudflare R2 圖解教學：替 Render 網站保存附件，支援本地與雲端儲存切換"
 date: 2026-11-03T00:00:00+08:00
 draft: false
 slug: "cloudflare-r2-render-file-storage"
@@ -11,6 +11,8 @@ tags: ["Cloudflare", "R2", "Render", "Docker", "ASP.NET Core", "檔案上傳"]
 將網站部署到 Render 之後，程式可以重新建置，但使用者上傳的 PDF、圖片和附件不能每次部署都消失。這篇延續 [Render＋Supabase 部署教學](../render-supabase-docker/)，把 Library 的附件改存 Cloudflare R2，同時保留本機開發用的本地儲存模式。
 
 本文以 2026 年 11 月的操作介面與專案設定為例。所有憑證使用佔位值，請填自己的新金鑰。本文的設定名稱對應 Library 已實作的儲存功能；其他專案需要先完成程式串接，單填環境變數不會自動啟用 R2。
+
+本文配圖為重新繪製的操作欄位示意，依實際設定流程標示重點，並非控制台截圖；不含個人帳號、付款資料或真實金鑰。
 
 ## 一、網站、資料庫與附件分別放哪裡？
 
@@ -68,6 +70,10 @@ R2 Standard 目前包含以下每月免費用量：
 
 貯體名稱含有 `private` 只是命名習慣，真正的存取設定仍要確認公開存取已停用。私人附件不需要啟用 `r2.dev` 網址；該網址是開發用途，且有速率限制。公開圖片的正式網域配置可另看 [公開貯體文件](https://developers.cloudflare.com/r2/buckets/public-buckets/)。
 
+![建立 R2 私人貯體的四個設定重點](images/01-create-bucket.svg)
+
+圖 1：從建立貯體到確認公開存取停用，依序核對名稱、位置與 Standard 儲存類別。
+
 ## 四、建立只授權該貯體的 S3 金鑰
 
 回到 R2 總覽，在帳戶詳細資訊區點「管理 API 令牌」。請從 R2 的入口進入，避免誤建一般 Cloudflare API Token。
@@ -81,6 +87,10 @@ R2 Standard 目前包含以下每月免費用量：
 5. IP 篩選若尚未規劃固定出口 IP，可先留空。
 
 不要誤選「物件唯讀」，否則無法上傳；一般附件存取也不需要管理所有貯體的系統管理員權限。Account 權杖適合服務長期使用；User 權杖則綁定個別使用者。參考 [R2 認證文件](https://developers.cloudflare.com/r2/api/tokens/)。
+
+![R2 Account API 權杖的權限與貯體範圍設定](images/02-token-permissions.svg)
+
+圖 2：上傳服務選「物件讀取和寫入」，範圍限制在 library-private；建立後自行保存 S3 認證。
 
 成功頁可能同時列出以下資訊：
 
@@ -185,6 +195,10 @@ services:
 
 ASP.NET Core 把雙底線 `__` 轉成設定階層，所以 `Storage__R2__Endpoint` 對應 `Storage:R2:Endpoint`。環境變數會覆寫 appsettings 的同名設定。
 
+![Docker Compose 從 .env 到 ASP.NET Core 設定的映射](images/03-compose-env.svg)
+
+圖 3：左側是設定步驟，右側是範例鍵名。`.env` 的 R2_* 經 Compose 映射後，才成為程式讀取的 Storage 階層。
+
 設定完成後，在專案根目錄執行：
 
 ```powershell
@@ -218,6 +232,10 @@ Render 不會使用本機 Compose 的 `.env`。進入服務的「Environment」�
 `R2_ACCESS_KEY_ID` 是 Compose 插值使用的名稱，直接填在 Render 不會自動映射成 Library 的設定鍵。Render 請使用表格中的雙底線名稱。
 
 保留既有資料庫連線、JWT、網站網址等設定，確認部署分支包含 R2 整合，再儲存並部署。單純 Save only 不會立刻讓執行中的服務使用新環境變數；參考 [Render 環境變數文件](https://render.com/docs/configure-environment-variables)。
+
+![Render Environment 的五個 R2 環境變數](images/04-render-env.svg)
+
+圖 4：Render 直接填 Storage__ 開頭的環境變數；不要照抄 Compose 的 R2_* 名稱。
 
 ## 八、確認 .env 不會上 Git
 

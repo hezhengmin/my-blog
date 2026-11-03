@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="649" viewBox="0 0 1200 649">
+<rect width="1200" height="100%" fill="#f1f5f9"/>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#172554}.title{font-size:32px;font-weight:700}.sub{font-size:20px;fill:#475569}.label{font-size:23px;font-weight:700}.value{font-size:19px}.note{font-size:19px;fill:#475569}</style>
+<rect x="30" y="24" width="1140" height="112" rx="16" fill="#fff"/>
+<text x="58" y="72" class="title">建立 R2 私人貯體</text>
+<text x="58" y="111" class="sub">Cloudflare → 儲存空間和資料庫 → R2 物件儲存 → 建立貯體</text>
+<rect x="42" y="160" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="193" r="17" fill="#2563eb"/>
+<text x="78" y="200" text-anchor="middle" style="fill:white;font-size:20px">1</text>
+<text x="110" y="194" class="label">貯體名稱</text>
+<text x="490" y="194" class="value">library-private</text>
+<text x="110" y="225" class="note">名稱用來識別附件容器；名稱本身不會控制公開權限。</text>
+<rect x="42" y="256" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="289" r="17" fill="#2563eb"/>
+<text x="78" y="296" text-anchor="middle" style="fill:white;font-size:20px">2</text>
+<text x="110" y="290" class="label">位置</text>
+<text x="490" y="290" class="value">自動</text>
+<text x="110" y="321" class="note">依控制台顯示的位置確認，不必選指定管轄區域。</text>
+<rect x="42" y="352" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="385" r="17" fill="#2563eb"/>
+<text x="78" y="392" text-anchor="middle" style="fill:white;font-size:20px">3</text>
+<text x="110" y="386" class="label">預設儲存類別</text>
+<text x="490" y="386" class="value">● 標準 Standard</text>
+<text x="110" y="417" class="note">免費額度適用 Standard；不要誤選不常存取。</text>
+<rect x="42" y="448" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="481" r="17" fill="#2563eb"/>
+<text x="78" y="488" text-anchor="middle" style="fill:white;font-size:20px">4</text>
+<text x="110" y="482" class="label">完成建立後</text>
+<text x="490" y="482" class="value">公開存取：已停用</text>
+<text x="110" y="513" class="note">私人附件保持停用，不需要啟用 r2.dev。</text>
+<text x="48" y="614" class="note">操作欄位示意，非控制台截圖；請以當前介面文字為準。</text>
+</svg>

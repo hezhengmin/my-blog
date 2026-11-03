@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="745" viewBox="0 0 1200 745">
+<rect width="1200" height="100%" fill="#f1f5f9"/>
+<style>text{font-family:Microsoft JhengHei,Noto Sans TC,sans-serif;fill:#172554}.title{font-size:32px;font-weight:700}.sub{font-size:20px;fill:#475569}.label{font-size:23px;font-weight:700}.value{font-size:19px}.note{font-size:19px;fill:#475569}</style>
+<rect x="30" y="24" width="1140" height="112" rx="16" fill="#fff"/>
+<text x="58" y="72" class="title">建立服務使用的 R2 API 權杖</text>
+<text x="58" y="111" class="sub">R2 總覽 → 管理 API 令牌 → 建立 Account API 權杖</text>
+<rect x="42" y="160" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="193" r="17" fill="#2563eb"/>
+<text x="78" y="200" text-anchor="middle" style="fill:white;font-size:20px">1</text>
+<text x="110" y="194" class="label">權杖名稱</text>
+<text x="490" y="194" class="value">library-render</text>
+<text x="110" y="225" class="note">名稱方便日後辨認、撤銷與更換。</text>
+<rect x="42" y="256" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="289" r="17" fill="#2563eb"/>
+<text x="78" y="296" text-anchor="middle" style="fill:white;font-size:20px">2</text>
+<text x="110" y="290" class="label">權限</text>
+<text x="490" y="290" class="value">● 物件讀取和寫入</text>
+<text x="110" y="321" class="note">必須能上傳；「物件唯讀」只能讀取，不能上傳。</text>
+<rect x="42" y="352" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="385" r="17" fill="#2563eb"/>
+<text x="78" y="392" text-anchor="middle" style="fill:white;font-size:20px">3</text>
+<text x="110" y="386" class="label">指定貯體</text>
+<text x="490" y="386" class="value">● 僅套用至特定貯體</text>
+<text x="110" y="417" class="note">勾選 library-private，避免授權帳戶內所有貯體。</text>
+<rect x="42" y="448" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="481" r="17" fill="#2563eb"/>
+<text x="78" y="488" text-anchor="middle" style="fill:white;font-size:20px">4</text>
+<text x="110" y="482" class="label">有效期限 / IP</text>
+<text x="490" y="482" class="value">依需求設定 / 未規劃則留空</text>
+<text x="110" y="513" class="note">設定期限後須於到期前更換；IP 限制需配合服務的出口 IP。</text>
+<rect x="42" y="544" width="1116" height="82" rx="12" fill="#fff" stroke="#cbd5e1"/>
+<circle cx="78" cy="577" r="17" fill="#2563eb"/>
+<text x="78" y="584" text-anchor="middle" style="fill:white;font-size:20px">5</text>
+<text x="110" y="578" class="label">建立成功後保存</text>
+<text x="490" y="578" class="value">Access Key ID + Secret + Endpoint</text>
+<text x="110" y="609" class="note">S3 用戶端使用這三項；不要把「權杖值」填成 Secret。</text>
+<text x="48" y="710" class="note">安全示意圖不含任何實際憑證；成功頁請勿截圖公開。</text>
+</svg>
